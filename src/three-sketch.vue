@@ -8,7 +8,7 @@ import {
 export default defineComponent({
   name: 'ThreeSketch',
   props: {
-    sketch: {
+    src: {
       type: Function,
       required: true,
     },
@@ -22,7 +22,7 @@ export default defineComponent({
         const {
           init,
           animate,
-        } = props.sketch(containerElement);
+        } = props.src(containerElement);
 
         if (typeof init === 'undefined') {
           throw (new Error('init Function is undefinded! It needs to be exposed in the sketch.'));
