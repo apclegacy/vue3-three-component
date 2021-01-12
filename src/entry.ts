@@ -1,5 +1,6 @@
 // iife/cjs usage extends esm default export - so import it all
-// 
+// i know importing with .ts is bad but it works like this so yeah
+// dirty
 import component, * as namedExports from './entry.esm.ts';
 
 // Attach named exports directly to component. IIFE/CJS will
