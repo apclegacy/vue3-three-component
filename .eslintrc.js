@@ -15,7 +15,13 @@ module.exports = {
   plugins: [
     'vue',
     '@typescript-eslint',
+    'import/typescript',
   ],
-  rules: {
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ts'],
+      },
+    },
   },
 };
