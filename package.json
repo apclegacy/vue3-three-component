@@ -1,7 +1,9 @@
 {
   "name": "vue3-threejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "threejs component for vue3",
+  "author": "alex peter charles (lexiboi)",
+  "repository": "https://github.com/lexiboi/vue3-threejs",
   "main": "dist/three-sketch.ssr.js",
   "browser": "dist/three-sketch.esm.js",
   "module": "dist/three-sketch.esm.js",
