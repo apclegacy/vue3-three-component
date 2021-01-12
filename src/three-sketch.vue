@@ -1,88 +1,51 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import {
+  defineComponent,
+  onMounted,
+  ref,
+} from 'vue';
 
-interface SampleData {
-  counter: number;
-  initCounter: number;
-  message: {
-    action: string | null;
-    amount: number | null;
-  };
-}
+export default defineComponent({
+  name: 'ThreeSketch',
+  props: {
+    sketch: {
+      type: Function,
+      required: true,
+    },
+  },
+  setup(props) {
+    const container = ref<HTMLElement | null>(null);
 
-export default /* #__PURE__ */defineComponent({
-  name: 'ThreeSketch', // vue component name
-  data(): SampleData {
+    onMounted(() => {
+      const containerElement = container.value;
+      if (containerElement instanceof HTMLElement) {
+        const {
+          init,
+          animate,
+        } = props.sketch(containerElement);
+
+        if (typeof init === 'undefined') {
+          throw (new Error('init Function is undefinded! It needs to be exposed in the sketch.'));
+        }
+
+        init();
+
+        if (typeof animate === 'undefined') {
+          throw (new Error('animate Function is undefinded! It needs to be exposed in the sketch.'));
+        }
+
+        animate();
+      } else {
+        throw (new Error('HTMLElement not found!'));
+      }
+    });
     return {
-      counter: 5,
-      initCounter: 5,
-      message: {
-        action: null,
-        amount: null,
-      },
+      container,
     };
-  },
-  computed: {
-    changedBy() {
-      const { message } = this as SampleData;
-      if (!message.action) return 'initialized';
-      return `${message?.action} ${message.amount ?? ''}`.trim();
-    },
-  },
-  methods: {
-    increment(arg: Event | number): void {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      this.counter += amount;
-      this.message.action = 'incremented by';
-      this.message.amount = amount;
-    },
-    decrement(arg: Event | number): void {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      this.counter -= amount;
-      this.message.action = 'decremented by';
-      this.message.amount = amount;
-    },
-    reset(): void {
-      this.counter = this.initCounter;
-      this.message.action = 'reset';
-      this.message.amount = null;
-    },
   },
 });
 </script>
 
 <template>
-  <div class="three-sketch">
-    <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
-    <button @click="increment">
-      Click +1
-    </button>
-    <button @click="decrement">
-      Click -1
-    </button>
-    <button @click="increment(5)">
-      Click +5
-    </button>
-    <button @click="decrement(5)">
-      Click -5
-    </button>
-    <button @click="reset">
-      Reset
-    </button>
-  </div>
+  <div id="container" ref="container"></div>
 </template>
-
-<style scoped>
-  .three-sketch {
-    display: block;
-    width: 400px;
-    margin: 25px auto;
-    border: 1px solid #ccc;
-    background: #eaeaea;
-    text-align: center;
-    padding: 25px;
-  }
-  .three-sketch p {
-    margin: 0 0 1em;
-  }
-</style>
