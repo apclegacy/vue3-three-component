@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "threejs component for vue3",
   "author": "alex peter charles (lexiboi)",
+  "license": "MIT",
   "repository": "https://github.com/lexiboi/vue3-threejs",
   "main": "dist/three-sketch.ssr.js",
   "browser": "dist/three-sketch.esm.js",
