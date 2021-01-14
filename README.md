@@ -1,6 +1,6 @@
 <h3 align="left">vue3 Three.js Component</h3>
 
-<p align="left"> Few lines describing your project.
+<p align="left">
     This is a Vue Component for simple and lightweight integration of Three.js Scenes in Vue3 Applications.
 </p>
 
