@@ -1,12 +1,5 @@
 <h3 align="left">vue3 Three.js Component</h3>
 
-  [![Build Status](https://img.shields.io/circleci/project/hilongjw/vue-lazyload/master.svg?style=flat-square)](https://circleci.com/gh/hilongjw/vue-lazyload)
-  [![npm version](https://img.shields.io/npm/v/vue-lazyload.svg?style=flat-square)](http://badge.fury.io/js/vue-lazyload)
-  [![npm license](https://img.shields.io/npm/l/vue-lazyload.svg?style=flat-square)](http://badge.fury.io/js/vue-lazyload)
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
----
-
 <p align="left"> Few lines describing your project.
     This is a Vue Component for simple and lightweight integration of Three.js Scenes in Vue3 Applications.
 </p>
