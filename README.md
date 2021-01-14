@@ -26,7 +26,7 @@ Required dependencies:
 ### Installing
 
 ```zsh
-npm i vue3-three-component
+npm i @alexpetercharles/vue3-three-component
 ```
 
 ## ⛏️ Built Using <a name = "built_using"></a>

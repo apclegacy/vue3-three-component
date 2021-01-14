@@ -1,7 +1,8 @@
 {
   "name": "@alexpetercharles/vue3-three-component",
-  "version": "1.0.23",
+  "version": "1.0.91-beta",
   "description": "threejs component for vue3",
+  "repository": "https://github.com/lexiboi/vue3-three-component",
   "author": "lexiboi",
   "license": "MIT",
   "main": "dist/three-sketch.ssr.js",
@@ -9,6 +10,11 @@
   "module": "dist/three-sketch.esm.js",
   "unpkg": "dist/three-sketch.min.js",
   "types": "three-sketch.d.ts",
+  "keywords": ["vue3", 
+              "three.js", 
+              "component",
+              "composition",
+              "typescript"],   
   "files": [
     "dist/*",
     "three-sketch.d.ts",
