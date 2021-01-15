@@ -31,7 +31,7 @@ npm i @alexpetercharles/vue3-three-component
 
 ### How to use ?!
 
-Check out the [Example](./example/tldr.md)
+Check out the [Example](./example/)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
