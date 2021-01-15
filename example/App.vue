@@ -5,7 +5,7 @@
 import { defineComponent } from 'vue';
 
 // import three.js scene
-import testScene from './sketch/testScene';
+import testScene from './testScene';
 
 // import ThreeSketch component
 // import ThreeSketch from '@alexpetercharles/three-sketch.vue'

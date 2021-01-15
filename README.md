@@ -29,6 +29,10 @@ Required dependencies:
 npm i @alexpetercharles/vue3-three-component
 ```
 
+### How to use ?!
+
+Check out the [Example](./example/tldr.md)
+
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [vue-sfc-rollup](https://github.com/team-innovation/vue-sfc-rollup) - Scaffold
