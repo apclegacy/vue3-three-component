@@ -7,7 +7,7 @@ want to run them yourself feel free to clone this repo and run
 npm run serve example/App.vue
 ```
 
-### 🥱 TLDR (pseudo):
+## 🥱 TLDR (pseudo):
 
 #### In Component (App.vue):
 
