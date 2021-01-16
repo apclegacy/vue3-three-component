@@ -1,8 +1,8 @@
 {
   "name": "@alexpetercharles/vue3-three-component",
-  "version": "1.0.94-beta",
+  "version": "1.0.95-beta",
   "description": "threejs component for vue3",
-  "repository": "https://github.com/lexiboi/vue3-three-component",
+  "repository": "https://github.com/alexpetercharles/vue3-three-component",
   "author": "alexpetercharles",
   "license": "MIT",
   "main": "dist/three-sketch.ssr.js",
