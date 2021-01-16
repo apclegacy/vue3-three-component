@@ -1,5 +1,9 @@
 <h3 align="left">Vue3 Three.js Component</h3>
 
+![NPM LICENSE](https://img.shields.io/npm/l/@alexpetercharles/vue3-three-component?style=flat-square)
+![NPM DOWNLOADS](https://img.shields.io/npm/dw/@alexpetercharles/vue3-three-component?color=blue&label=npm%20downloads&style=flat-square)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/alexpetercharles/vue3-three-component?include_prereleases&label=github%20release&style=flat-square)
+
 <p align="left">
     This is a Vue Component for simple and lightweight integration of Three.js Scenes in Vue3 Applications.
 </p>
