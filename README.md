@@ -20,9 +20,9 @@ I was looking for an integration of three.js Scenes in my Vue3 Application which
 
 ### Why?
 
-- Lightweight
-- Normal Three.Js Workflow
-- inbuilt TypeScript declarations
+- 🪶 Lightweight
+- 🍳 Normal Three.Js Workflow
+- 🆎 inbuilt TypeScript declarations
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
