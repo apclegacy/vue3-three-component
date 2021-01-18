@@ -18,6 +18,12 @@
 
 I was looking for an integration of three.js Scenes in my Vue3 Application which required only minimal changes to Three.js Scripts since those scripts were sometimes developed outside of Vue.
 
+### Why?
+
+- Lightweight
+- Normal Three.Js Workflow
+- inbuilt TypeScript declarations
+
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 ### Prerequisites
